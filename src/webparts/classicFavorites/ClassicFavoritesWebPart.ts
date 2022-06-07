@@ -21,7 +21,8 @@ export default class ClassicFavoritesWebPart extends BaseClientSideWebPart<IClas
     const element: React.ReactElement<IClassicFavoritesProps> = React.createElement(
       ClassicFavorites,
       {
-        description: this.properties.description
+        description: this.properties.description,
+        context: this.context
       }
     );
 
