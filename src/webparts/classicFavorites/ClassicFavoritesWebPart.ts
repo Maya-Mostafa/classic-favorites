@@ -12,7 +12,9 @@ import ClassicFavorites from './components/ClassicFavorites';
 import { IClassicFavoritesProps } from './components/IClassicFavoritesProps';
 
 export interface IClassicFavoritesWebPartProps {
-  description: string;
+  wpTitle: string;
+  editTxt: string;
+  okTxt: string;
 }
 
 export default class ClassicFavoritesWebPart extends BaseClientSideWebPart<IClassicFavoritesWebPartProps> {
@@ -21,8 +23,10 @@ export default class ClassicFavoritesWebPart extends BaseClientSideWebPart<IClas
     const element: React.ReactElement<IClassicFavoritesProps> = React.createElement(
       ClassicFavorites,
       {
-        description: this.properties.description,
-        context: this.context
+        context: this.context,
+        wpTitle: this.properties.wpTitle,
+        editTxt: this.properties.editTxt,
+        okTxt: this.properties.okTxt
       }
     );
 
@@ -48,8 +52,18 @@ export default class ClassicFavoritesWebPart extends BaseClientSideWebPart<IClas
             {
               groupName: strings.BasicGroupName,
               groupFields: [
-                PropertyPaneTextField('description', {
-                  label: strings.DescriptionFieldLabel
+                PropertyPaneTextField('wpTitle', {
+                  label: 'Links Title',
+                  value: this.properties.wpTitle,
+                  description: 'e.g. Peel Applications or Peel Links'
+                }),
+                PropertyPaneTextField('editTxt', {
+                  label: 'Edit Button Text',
+                  value: this.properties.editTxt,
+                }),
+                PropertyPaneTextField('okTxt', {
+                  label: 'Ok/Apply Button Text',
+                  value: this.properties.okTxt,
                 })
               ]
             }

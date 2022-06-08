@@ -1,6 +1,8 @@
-import {WebPartContext} from '@microsoft/sp-webpart-base'
+import {WebPartContext} from '@microsoft/sp-webpart-base';
 
 export interface IClassicFavoritesProps {
-  description: string;
   context: WebPartContext;
+  wpTitle: string;
+  editTxt: string;
+  okTxt: string;
 }

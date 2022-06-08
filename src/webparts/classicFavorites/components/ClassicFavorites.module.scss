@@ -1,5 +1,43 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
 .classicFavorites {
-  
+
+  .linkCntnr{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .toggleNdTxt{
+      width:32%;
+      padding: 5px;
+      display: flex;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+    
+  .linksHdrOps{
+    display: flex;
+    justify-content: space-between;
+    .linksHdrTxt{
+      width: 100%;
+      padding: 5px;
+    }
+    .linksHdrBtn{
+      position: absolute;
+      right: 25px;
+      button{
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .linkChk{
+    color: #0072C6
+  }
+
+  .deleteIcon{
+    padding-bottom: 12px;
+  }
+ 
 }

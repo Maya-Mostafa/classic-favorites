@@ -18,11 +18,13 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "ClassicFavorites" },
+    "title": { "default": "Peel Classic Favorites" },
     "description": { "default": "ClassicFavorites description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "ClassicFavorites"
+      "wpTitle": "Favorites Documents - Classic",
+      "editTxt" : "Edit",
+      "okTxt" : "Ok"
     }
   }]
 }

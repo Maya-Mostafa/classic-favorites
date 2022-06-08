@@ -5,6 +5,7 @@
     "id": "e4e003a8-9084-4d78-bd02-1258a62b87a1",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
@@ -15,6 +16,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/classic-favorites.sppkg"
+    "zippedPackage": "solution/peel-classic-favorites.sppkg"
   }
 }

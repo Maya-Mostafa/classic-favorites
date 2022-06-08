@@ -36,4 +36,5 @@ Short summary on functionality and used technologies.
 
 
 ## References
-
+How To Update SharePoint Online User Profile Properties Using SPFx And Rest API
+https://www.c-sharpcorner.com/article/how-to-update-sharepoint-online-user-profile-properties-using-spfx-and-rest-api/
