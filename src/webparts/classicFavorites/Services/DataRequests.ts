@@ -8,12 +8,13 @@ export const getFollowedDocuments = async (context: WebPartContext) => {
         const response = await context.spHttpClient.get(responseUrl, SPHttpClient.configurations.v1);
         if (response.ok){
             const responseResults = await response.json();
-            return responseResults.value.map(item => {
+            const unsortedResults = responseResults.value.map(item => {
                 return {
                     title: item.Name,
                     url: item.ContentUri
                 };
             });
+            return unsortedResults.sort((a, b) => a.title.localeCompare(b.title));
         }else{
             console.log("Response Error: ", response.statusText);
         }
