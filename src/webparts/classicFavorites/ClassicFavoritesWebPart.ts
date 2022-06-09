@@ -55,7 +55,7 @@ export default class ClassicFavoritesWebPart extends BaseClientSideWebPart<IClas
                 PropertyPaneTextField('wpTitle', {
                   label: 'Links Title',
                   value: this.properties.wpTitle,
-                  description: 'e.g. Peel Applications or Peel Links'
+                  description: 'e.g. Favorites Documents'
                 }),
                 PropertyPaneTextField('editTxt', {
                   label: 'Edit Button Text',
