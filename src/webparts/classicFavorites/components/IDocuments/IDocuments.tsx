@@ -28,6 +28,8 @@ export const IDocuments = (props: IDocumentsProps) => {
                                 <a 
                                     className={styles.linkChk}
                                     key={docItem.id} 
+                                    target='_blank'
+                                    data-interception="off" 
                                     href={docItem.url}>
                                         {docItem.title}
                                 </a>
@@ -37,6 +39,8 @@ export const IDocuments = (props: IDocumentsProps) => {
                                 <a 
                                     className={styles.linkChk}
                                     key={docItem.id} 
+                                    target='_blank'
+                                    data-interception="off"
                                     href={docItem.url}>
                                         {docItem.title}
                                 </a>
